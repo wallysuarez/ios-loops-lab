@@ -4,27 +4,27 @@ Fork and clone this repo. On your fork, answer and commit the follow questions. 
 
 ## Question 1
 
-Write code that prints all the numbers from 1 to 150 inclusive
+Write code that prints all the numbers from 1 to 150, inclusive
 
 ## Question 2
 
-Write code that prints all the numbers from 142 to 159 exclusive.
+Write code that prints all the numbers from 142 to 159, exclusive.
 
 ## Question 3
 
-Write code that prints only the even numbers from 15 to 80 inclusive.
+Write code that prints only the even numbers from 15 to 80, inclusive.
 
 ## Question 4
 
-Write code that prints only the odd numbers from 19 to 51 inclusive.
+Write code that prints only the odd numbers from 19 to 51, inclusive.
 
 ## Question 5
 
-Write code that prints all the numbers that end in a `5` from 1 to 100 exclusive.
+Write code that prints all the numbers that end in a `5` from 1 to 100, exclusive.
 
 ## Question 6
 
-Write code that prints all the numbers that end in a 7 from 1 to 40 inclusive.
+Write code that prints all the numbers that end in a 7 from 1 to 40, inclusive.
 
 ## Question 7
 
@@ -56,8 +56,9 @@ Without using Xcode, how many times will the loop below run?  Explain why.
 
 ```swift
 var i = 5
+
 while (i > 3) {
-i += 1
+    i += 1
 }
 ```
 
@@ -69,7 +70,7 @@ Change the code below to make the loop stop executing when i reaches 9.
 var i = 5
 
 while (i > 3) {
- i += 1
+    i += 1
 }
 ```
 
@@ -81,7 +82,7 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 var i = 5
 
 while (i > 3) {
- i += 1
+    i += 1
 }
 ```
 
@@ -93,7 +94,7 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 var i = 5
 
 while (i > 3) {
- i += 1
+    i += 1
 }
 ```
 
@@ -105,15 +106,16 @@ What's the difference in syntax between the following two while loops?  Will the
 var i = 1
 //loop one
 while i <= 10 {
- print("i = \(i)")
- i += 1
+    print("i = \(i)")
+    i += 1
 }
-var i = 1
 
 //loop two
+var i = 1
+
 repeat {
- print("i = \(i)")
- i += 1
+    print("i = \(i)")
+    i += 1
 } while i <= 10
 ```
 
@@ -127,10 +129,10 @@ Without using Xcode, what will the loop below print? Select all that apply.
 
 ```swift
 for i in 1...10 {
- if (i >= 4 && i <= 7){
- continue
- }
- print(i)
+    if (i >= 4 && i <= 7){
+        continue
+    }
+    print(i)
 }
 ```
 
@@ -151,10 +153,10 @@ Without using Xcode, what will the loop below print? Select all that apply.
 
 ```swift
 for i in 1...10 {
- if (i >= 4 && i <= 7){
- break
- }
- print(i)
+    if (i >= 4 && i <= 7){
+        break
+    }
+    print(i)
 }
 ```
 
@@ -175,26 +177,26 @@ Without using Xcode, what will the loop below print?  Explain below.
 
 ```swift
 outerloop: for x in 1...3 {
- innerloop: for y in 1...3 {
- if y == 2{
- continue outerloop
- }
- print("x = \(x), y = \(y)")
- }
+    innerloop: for y in 1...3 {
+        if y == 2{
+            continue outerloop
+        }
+        print("x = \(x), y = \(y)")
+    }
 }
 ```
 
 ## Question 20
 
-Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) where x and y are both integers.
+Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) *where* x and y are both integers.
 
 ## Question 21
 
-Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) where the difference of x and y is at least 5, and x and y are both integers.
+Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) *where* the difference of x and y is at least 5, and x and y are both integers.
 
 ## Question 22
 
-Print the first `N` square numbers. A square number, also called perfect square, is an integer that is obtained by squaring some other integer; in other words, it is the product of some integer with itself (ex. 1 = 1*1, 4 = 2 * 2, 9 = 3* 3 …).
+Print the first `N` square numbers. A *square number*, also called perfect square, is an integer that is obtained by squaring some other integer; in other words, it is the product of some integer with itself (ex. 1 = 1*1, 4 = 2 * 2, 9 = 3* 3 …).
 
 var N = 10
 
