@@ -13,31 +13,66 @@
 ## Question 1
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
+```
+let range = 1...150
 
+for i in range {
+print(i)
+}
+
+```
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+```
+for i in 142..<159 {
+print(i)
+}
 
+```
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+```
+for i in 15...80 where i % 2 == 0 {
+print(i)
+}
+```
 
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+```
+for i in 19...51 where i % 2 != 0 {
+print(i)
+}
+```
 
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
+```
+for i in 1..<100 where i % 10 == 5 {
+print(i)
+}
+
+```
 
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+```
+var i = 7
+while i <= 40 {
+print (i)
+i += 10
+}
+```
 
 ***
 ## Question 7
@@ -45,7 +80,12 @@ Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 3`
+```
+for i in 20...150 where i % 3 == 0 {
+print(i)
+}
 
+```
 ***
 ## Question 8
 
@@ -53,20 +93,37 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 2 and 3`
 
+```
+for i in 20...150 where i % 3 == 0
+&& i % 2 == 0 {
+print(i)
+}
+
+```
+
 ***
 ## Question 9
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that end with a 4`
+```
+var range = 20...150
+var i = 24
 
+while i <= 150 {
+print (i)
+i += 10
+}
+```
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
-
+```
+```
 ***
 ## Question 11
 
