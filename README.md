@@ -14,9 +14,7 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 ```
-let range = 1...150
-
-for i in range {
+for i in 1...150 {
 print(i)
 }
 
@@ -67,10 +65,10 @@ print(i)
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 ```
-var i = 7
-while i <= 40 {
-print (i)
-i += 10
+for i in 1...40 where i == 7 {
+for j in stride(from: 7, to: 40, by: 10) {
+print(j)
+}
 }
 ```
 
@@ -108,12 +106,10 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 ```
-var range = 20...150
-var i = 24
-
-while i <= 150 {
-print (i)
-i += 10
+for i in 20...150 where i == 24 {
+for j in stride(from: 24, to: 150, by: 10) {
+print(j)
+}
 }
 ```
 ***
@@ -136,7 +132,7 @@ while (i > 3) {
     i += 1
 }
 
-// Your explanation here
+// The program will enter into an endless loop because there is no stopping condition or break written into the code.
 ```
 
 ***
@@ -147,9 +143,10 @@ Change the code below to make the loop stop executing when i reaches 9.
 ```swift
 var i = 5
 
-while (i > 3) {
-    i += 1
-}
+repeat {
+(i > 3)
+i += 1
+} while (i <= 9)
 ```
 
 ***
@@ -160,9 +157,11 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 ```swift
 var i = 5
 
-while (i > 3) {
-    i += 1
-}
+repeat {
+(i > 3)
+i += 1
+} while (i < 1005)
+
 ```
 
 ***
@@ -173,9 +172,14 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 ```swift
 var i = 5
 
-while (i > 3) {
-    i += 1
+repeat {
+(i > 3)
+i += 1
+if i % 2 == 0 {
+print(i)
 }
+} while (i < 1005)
+
 ```
 
 ***
@@ -219,16 +223,16 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[x]1
+[x]2
+[x]3
 []4
 []5
 []6
 []7
-[]8
-[]9
-[]10
+[x]8
+[x]9
+[x]10
 
 ***
 ## Question 18
@@ -244,9 +248,9 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[x]1
+[x]2
+[x]3
 []4
 []5
 []6
@@ -270,6 +274,9 @@ outerloop: for x in 1...3 {
     }
 }
 ```
+x = 1, y = 1
+x = 2, y = 1
+x = 3, y = 1
 
 ***
 ## Question 20
