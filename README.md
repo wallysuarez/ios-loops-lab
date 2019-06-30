@@ -212,7 +212,7 @@ What's the difference between `break` and `continue`?  Give an example that demo
 
 The `break` statement stops the execution of a loop. After the loop is stopped the program goes on to the next statement outside the loop.
 
-The `continue` statement  tells the loop to stop at a certain iteration and start again at the beginning of the nexrt iteration throught the loop.
+The `continue` statement  tells the loop to stop at a certain iteration and start again at the beginning of the next iteration throught the loop.
 
 
 ***
