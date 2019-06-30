@@ -301,9 +301,9 @@ Write code that prints out all the points in the area bounded by (0,0), (10,0), 
 
 ```
 outerloop: for x in 0...10 {
-    innerloop: for y in 0...10 {
-        print("x = \(x), y = \(y)")
-        }
+innerloop: for y in 0...10 {
+print("x = \(x), y = \(y)")
+}
 }
 ```
 ***
