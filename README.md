@@ -119,6 +119,12 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 
 `Print out numbers: 31, 35, 40 to 60.`
 ```
+for i in 20...150 {
+if i == 31 || i == 35 ||
+(i >= 40 && i <= 60 ) {
+print(i)
+}
+}
 ```
 ***
 ## Question 11
@@ -131,9 +137,10 @@ var i = 5
 while (i > 3) {
     i += 1
 }
-
-// The program will enter into an endless loop because there is no stopping condition or break written into the code.
 ```
+
+The program will enter into an endless loop because there is no stopping condition or break written into the code.
+
 
 ***
 ## Question 12
@@ -203,6 +210,7 @@ repeat {
     i += 1
 } while i <= 10
 ```
+They will produce different outputs because Repeat-while loops test the termination condition at the end of the loop, rather than the start.  This means that the second while-loop will run twice, and the first while-loop will only run once.
 
 ***
 ## Question 16
@@ -273,24 +281,31 @@ Without using Xcode, what will the loop below print?  Explain below.
 ```swift
 outerloop: for x in 1...3 {
     innerloop: for y in 1...3 {
-        if y == 2{
+        if y == 2 {
             continue outerloop
         }
         print("x = \(x), y = \(y)")
     }
 }
 ```
-`
-x = 1, y = 1
-x = 2, y = 1
-x = 3, y = 1
-`
+
+The continue statement interrupts the number of iterations the inner loop would otherwise run.
+Instead of running 3 times, the inner loop only runs one iteration. As soon as y=2, the loop continue statement commands the program to return back to the outer loop.
+The program prints x = 1, x = 2, x = 3, and y = 1, y = 1, y = 1 
+
 
 ***
 ## Question 20
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
 
+```
+outerloop: for x in 0...10 {
+    innerloop: for y in 0...10 {
+        print("x = \(x), y = \(y)")
+        }
+}
+```
 ***
 ## Question 21
 
