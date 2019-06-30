@@ -209,6 +209,12 @@ repeat {
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
+
+The `break` statement stops the execution of a loop. After the loop is stopped the program goes on to the next statement outside the loop.
+
+The `continue` statement  tells the loop to stop at a certain iteration and start again at the beginning of the nexrt iteration throught the loop.
+
+
 ***
 ## Question 17
 
@@ -274,9 +280,11 @@ outerloop: for x in 1...3 {
     }
 }
 ```
+`
 x = 1, y = 1
 x = 2, y = 1
 x = 3, y = 1
+`
 
 ***
 ## Question 20
