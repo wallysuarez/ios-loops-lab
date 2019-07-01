@@ -300,10 +300,14 @@ The program prints x = 1, x = 2, x = 3, and y = 1, y = 1, y = 1
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
 
 ```
-outerloop: for x in 0...10 {
-innerloop: for y in 0...10 {
-print("x = \(x), y = \(y)")
+let x = 0...10
+let y = 0...10
+
+for i in x {
+for j in y {
+print("\(i), \(j)", terminator: " ")
 }
+print()
 }
 ```
 ***
@@ -311,6 +315,16 @@ print("x = \(x), y = \(y)")
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** the difference of x and y is at least 5, and x and y are both integers.
 
+```
+let x = 0...10
+let y = 0...10
+
+for i in x {
+for j in y where i - j >= 5 {
+print("(\(i), \(j))", terminator: " ")
+}
+}
+```
 ***
 ## Question 22
 
